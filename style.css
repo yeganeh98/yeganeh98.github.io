@@ -1,10 +1,40 @@
-// Wait for the document to load before running the script 
-(function ($) {
-    // We use some Javascript and the URL #fragment to hide/show different parts of the page
-    $(window).on('load hashchange', function() {
-        // First hide all content regions, then show the content-region specified in the URL hash 
-        $('.content-region').hide();
-        $('.main-menu a').removeClass('active');
-        var region = location.hash.toString() || $('.main-menu a:first').attr('href');
-        $(region).show();
-        $('.
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.content-region {
+    display: none; /* Initially hide all sections */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
