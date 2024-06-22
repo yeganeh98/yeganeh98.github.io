@@ -2,12 +2,12 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa; /* Light gray background */
     color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #003366; /* Dark blue */
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -33,7 +33,7 @@ header .main-menu a {
 }
 
 header .main-menu a:hover, .main-menu a.active {
-    background-color: #45a049;
+    background-color: #00509e; /* Slightly lighter blue for hover */
     border-radius: 5px;
 }
 
@@ -44,7 +44,7 @@ header .main-menu a:hover, .main-menu a.active {
     height: 100vh;
     margin-top: 60px; /* Offset for fixed header */
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
 }
 
 .main-content img {
@@ -60,7 +60,7 @@ header .main-menu a:hover, .main-menu a.active {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #003366;
     color: white;
     text-align: center;
     padding: 10px;
