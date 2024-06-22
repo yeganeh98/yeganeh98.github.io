@@ -2,65 +2,35 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333;
 }
 
 header {
-    background-color: #000; /* Black */
+    background-color: #333;
     color: white;
-    padding: 20px 10px;
+    padding: 10px 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
-header .main-menu {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+header img {
+    width: 100px;
+    border-radius: 50%;
 }
 
-header .main-menu a {
+.main-menu a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
+    padding: 0 15px;
 }
 
-header .main-menu a:hover, .main-menu a.active {
-    background-color: #555; /* Gray for hover */
-    border-radius: 5px;
-}
-
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 60px; /* Offset for fixed header */
+.content-region {
+    display: none; /* Initially hide all sections */
     padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.main-content img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.main-content p {
-    text-align: center;
-    font-size: 1.2em;
-    max-width: 800px;
+    margin: 10px;
+    background-color: #f4f4f4;
 }
 
 footer {
-    background-color: #000; /* Black */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
