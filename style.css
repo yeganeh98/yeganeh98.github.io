@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light background for better visibility */
 }
 
 header {
@@ -23,10 +24,10 @@ header img {
 }
 
 .content-region {
-    display: none; /* Initially hide all sections */
+    display: block; /* Show all sections by default */
     padding: 20px;
     margin: 10px;
-    background-color: #f4f4f4;
+    background-color: #fff; /* White background for content sections */
 }
 
 footer {
@@ -34,7 +35,11 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative; /* Change to relative */
     width: 100%;
     bottom: 0;
+}
+
+main {
+    min-height: calc(100vh - 120px); /* Ensure main content takes full viewport height */
 }
