@@ -17,20 +17,13 @@ header {
     z-index: 1000;
 }
 
-header img {
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-.main-menu {
+header .main-menu {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.main-menu a {
+header .main-menu a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -39,18 +32,31 @@ header img {
     transition: background-color 0.3s ease;
 }
 
-.main-menu a:hover, .main-menu a.active {
+header .main-menu a:hover, .main-menu a.active {
     background-color: #45a049;
     border-radius: 5px;
 }
 
-.content-region {
-    display: none; /* Initially hide all sections */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 60px; /* Offset for fixed header */
     padding: 20px;
-    margin: 80px 20px 20px 20px; /* Add top margin for fixed header */
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.main-content img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 800px;
 }
 
 footer {
