@@ -7,7 +7,7 @@ body, html {
 }
 
 header {
-    background-color: #003366; /* Dark blue */
+    background-color: #000; /* Black */
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -33,7 +33,7 @@ header .main-menu a {
 }
 
 header .main-menu a:hover, .main-menu a.active {
-    background-color: #00509e; /* Slightly lighter blue for hover */
+    background-color: #555; /* Gray for hover */
     border-radius: 5px;
 }
 
@@ -60,7 +60,7 @@ header .main-menu a:hover, .main-menu a.active {
 }
 
 footer {
-    background-color: #003366;
+    background-color: #000; /* Black */
     color: white;
     text-align: center;
     padding: 10px;
