@@ -8,60 +8,83 @@ body, html {
 
 .main-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding: 20px;
     background-color: #000;
+    padding: 20px;
 }
 
 .logo-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 20px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .logo {
     width: 50px;
     height: 50px;
+    margin-right: 10px;
 }
 
 .logo-text {
     font-size: 12px;
     line-height: 1.5;
-    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex: 1;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-text {
     max-width: 500px;
+    margin-right: 20px;
 }
 
 .hero-text h1 {
     font-size: 36px;
     margin: 0 0 10px 0;
+    color: #fff;
 }
 
 .hero-text h2 {
     font-size: 28px;
     margin: 0 0 10px 0;
+    color: #fff;
 }
 
 .hero-text p {
     font-size: 18px;
     margin: 5px 0;
+    color: #fff;
 }
 
 .hero-image {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
 @media (min-width: 768px) {
