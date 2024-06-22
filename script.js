@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // Show the first section by default
-    $('#home').show();
-
     // Navigation click actions
     $('.main-menu a').on('click', function() {
         var target = $(this).attr('href');
